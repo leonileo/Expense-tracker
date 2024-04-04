@@ -31,10 +31,8 @@ exports.getExpenses = async (req, res) => {
 
 exports.deleteExpense = async (req, res) => {
     const {id} = req.params;
-    console.log(id);
     ExpenseSchema.findByIdAndDelete(id)
     .then((income) => {
-        console.log(income)
         res.status(200).json({message: 'Expense deleted'})
     })
     .catch(err => {
