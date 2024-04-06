@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path')
 const p = path.dirname(__filename)
-const { db } = require(`${p}/db/DB.JS`);
+const { db } = require(`${p}/db/db.js`);
 const {readdirSync} = require('fs');
 const app = express();
 require('dotenv').config();
