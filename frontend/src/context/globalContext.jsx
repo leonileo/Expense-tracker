@@ -1,7 +1,9 @@
 import { createContext, useContext, useState } from "react";
 import axios from 'axios'
 
-const BASE_URL = import.meta.env.VITE_BASE_URL;
+// const BASE_URL = import.meta.env.VITE_BASE_URL;
+const BASE_URL = "https://expense-tracker-8ihq.onrender.com/";
+
 const GlobalContext = createContext()
 
 export const GlobalProvider = ({children}) => {
